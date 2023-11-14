@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="left-bar">
+            <ul class="leftbar-menu">
+                <li class="active"><a href="#"><i class='bx bx-home-alt' ></i></a></li>
+                <li><a href="#"><i class='bx bxs-contact' ></i></a></li>
+                <li><a href="#"><i class='bx bx-cog' ></i></a></li>
+            </ul>
+            <li class="leftbar-profile">
+                <button class="leftbar-profile-toggle" href="#"><img src="../Images/profile.jpg"></img></button>
+                <ul class="leftbar-profile-menu">
+                    <li><a href="#"><i class='bx bx-log-out' ></i>Log Out</a></li>
+                </ul>
+            </li>
+        </div>
+        <div class="left">
+            <div class="top">
+                <input type="search" class="search-bar-input" placeholder="Search...">
+                <button type="submit" class="search-bar-submit"><i class='bx bx-search'></i></button>
+                <div class="add-new">
+                    <span>Add New</span>
+                    <button><i class='bx bxs-message-square-add' ></i></button>
+                </div>
+                <div class="recently"><span>Recently</span></div>
+            </div>
+            <ul class="people">
+                <li class="person" data-chat="person1">
+                    <img class="pfp" src="../Images/profile.jpg" alt="" />
+                    <span class="person-info">
+                        <span class="name">Person 1😂 </span>
+                        <span class="preview">Lorem ipsum dolor sit amet consectetur adipis</span>
+                    </span>
+                    <span class="person-more">
+                        <span class="status">🟢online</span>
+                        <span class="time">2:09 PM</span>
+                        <span class="unread">5</span>
+                    </span>
+                </li>
+                <li class="person" data-chat="person2">
+                    <img class="pfp" src="../Images/pxfuel.jpg" alt="" />
+                    <span class="person-info">
+                        <span class="name">Person 2</span>
+                        <span class="preview">Lorem ipsum 🫠🫠🫠 dolor sit amet consectetur adipis</span>
+                    </span>
+                    <span class="person-more">
+                        <span class="status">🔴offline</span>
+                        <span class="time">2:09 PM</span>
+                    </span>
+                </li>
+                <li class="person" data-chat="person3">
+                    <img class="pfp" src="../Images/profile.jpg" alt="" />
+                    <span class="person-info">
+                        <span class="name">Person 3😈😈😈</span>
+                        <span class="preview">Lorem ipsum dolor sit amet consectetur adipis</span>
+                    </span>
+                    <span class="person-more">
+                        <span class="status">🔴offline</span>
+                        <span class="time">3:09 AM</span>
+                        <span class="unread">1</span>
+                    </span>
+                </li>
+                <li class="person" data-chat="person4">
+                    <img class="pfp"  src="../Images/profile.jpg" alt="" />
+                    <span class="person-info">
+                        <span class="name">Person 4</span>
+                        <span class="preview">Lorem ipsum dolor sit amet consectetur adipis</span>
+                    </span>
+                    <span class="person-more">
+                        <span class="status">🟢online</span>
+                        <span class="time">2:09 PM</span>
+                        <span class="unread">5</span>
+                    </span>
+                </li>
+                <li class="person" data-chat="person5">
+                    <img class="pfp" src="../Images/profile.jpg" alt="" />
+                    <span class="person-info">
+                        <span class="name">Person 5</span>
+                        <span class="preview">Lorem☘️ ☘️ ☘️ ipsum dolor sit amet consectetur adipis</span>
+                    </span>
+                    <span class="person-more">
+                        <span class="status">🔴offline</span>
+                        <span class="time">2:09 PM</span>
+                        <span class="unread">5</span>
+                    </span>
+                </li>
+                <li class="person" data-chat="person6">
+                    <img class="pfp" src="../Images/profile.jpg" alt="" />
+                    <span class="person-info">
+                        <span class="name">Person 6</span>
+                        <span class="preview">Lorem ipsum dolor sit amet consectetur adipis</span>
+                    </span>
+                    <span class="person-more">
+                        <span class="status">🔴offline</span>
+                        <span class="time">2:09 PM</span>
+                        <span class="unread">5</span>
+                    </span>
+                </li>
+                <li class="person" data-chat="person7">
+                    <img class="pfp" src="../Images/profile.jpg" alt="" />
+                    <span class="person-info">
+                        <span class="name">Person 7</span>
+                        <span class="preview">Lorem ipsum dolor sit amet consectetur adipis</span>
+                    </span>
+                    <span class="person-more">
+                        <span class="status">🔴offline</span>
+                        <span class="time">2:09 PM</span>
+                        <span class="unread">5</span>
+                    </span>
+                </li>
+                <li class="person" data-chat="person8">
+                    <img class="pfp" src="../Images/profile.jpg" alt="" />
+                    <span class="person-info">
+                        <span class="name">Person 8</span>
+                        <span class="preview">Lorem ipsum dolor sit amet consectetur adipis</span>
+                    </span>
+                    <span class="person-more">
+                        <span class="status">🔴offline</span>
+                        <span class="time">2:09 PM</span>
+                        <span class="unread">5</span>
+                    </span>
+                </li>
+                <li class="person" data-chat="person9">
+                    <img class="pfp" src="../Images/profile.jpg" alt="" />
+                    <span class="person-info">
+                        <span class="name">Person 9</span>
+                        <span class="preview">Lorem ipsum dolor sit amet consectetur adipis</span>
+                    </span>
+                    <span class="person-more">
+                        <span class="status">🔴offline</span>
+                        <span class="time">2:09 PM</span>
+                        <span class="unread">5</span>
+                    </span>
+                </li>
+                <li class="person" data-chat="person10">
+                    <img class="pfp" class="pfp" src="../Images/profile.jpg" alt="" />
+                    <span class="person-info">
+                        <span class="name">Person 10</span>
+                        <span class="preview">Lorem ipsum dolor sit amet consectetur adipis</span>
+                    </span>
+                    <span class="person-more">
+                        <span class="status">🔴offline</span>
+                        <span class="time">2:09 PM</span>
+                        <span class="unread">5</span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="top">
+                <span class="status">🟢online</span>
+                <img class="pfp" src="../Images/profile.jpg">
+                <span class="name">Person 1😂</span>
+            </div>
+            <div class="chat" data-chat="person1">
+                <div class="conversation-start">
+                    <span>Today, 6:48 AM</span>
+                </div>
+                <div class="bubble you">
+                    Hello,
+                </div>
+                <div class="bubble you">
+                    it's me.
+                </div>
+                <div class="bubble you">
+                    Alololololololo...
+                </div>
+            </div>
+            <div class="chat" data-chat="person2">
+                <div class="conversation-start">
+                    <span>Today, 5:38 PM</span>
+                </div>
+                <div class="bubble you">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, architecto! Quidem amet eum inventore repudiandae optio. Aliquam, suscipit harum earum accusantium, maxime quidem, architecto fugiat saepe omnis eaque expedita totam!?
+                </div>
+                <div class="bubble you">
+                    Hahaha
+                </div>
+                <div class="bubble me">
+                    Yooooooooo
+                </div>
+                <div class="bubble me">
+                    Ok ok ok ok ok ok?
+                </div>
+                <div class="bubble you">
+                    ??????????????...
+                </div>
+                <div class="bubble you">
+                    Yasssssssssssssss
+                </div>
+            </div>
+            <div class="chat" data-chat="person3">
+                <div class="conversation-start">
+                    <span>Today, 3:38 AM</span>
+                </div>
+                <div class="bubble you">
+                    Hey human!
+                </div>
+                <div class="bubble you">
+                    Umm... Someone took a shit in the hallway.
+                </div>
+                <div class="bubble me">
+                    ... what.
+                </div>
+                <div class="bubble me">
+                    Are you serious?
+                </div>
+                <div class="bubble you">
+                    I mean...
+                </div>
+                <div class="bubble you">
+                    It’s not that bad...
+                </div>
+                <div class="bubble you">
+                    But we’re probably gonna need a new carpet.
+                </div>
+            </div>
+            <div class="chat" data-chat="person4">
+                <div class="conversation-start">
+                    <span>Yesterday, 4:20 PM</span>
+                </div>
+                <div class="bubble me">
+                    Hey human!
+                </div>
+                <div class="bubble me">
+                    Umm... Someone took a shit in the hallway.
+                </div>
+                <div class="bubble you">
+                    ... what.
+                </div>
+                <div class="bubble you">
+                    Are you serious?
+                </div>
+                <div class="bubble me">
+                    I mean...
+                </div>
+                <div class="bubble me">
+                    It’s not that bad...
+                </div>
+            </div>
+            <div class="chat" data-chat="person5">
+                <div class="conversation-start">
+                    <span>Today, 6:28 AM</span>
+                </div>
+                <div class="bubble you">
+                    Wasup
+                </div>
+                <div class="bubble you">
+                    Wasup
+                </div>
+                <div class="bubble you">
+                    Wasup for the third time like is <br />you blind bitch
+                </div>
+            </div>
+            <div class="chat" data-chat="person6">
+                <div class="conversation-start">
+                    <span>Monday, 1:27 PM</span>
+                </div>
+                <div class="bubble you">
+                    So, how's your new phone?
+                </div>
+                <div class="bubble you">
+                    You finally have a smartphone :D
+                </div>
+                <div class="bubble me">
+                    Drake?
+                </div>
+                <div class="bubble me">
+                    Why aren't you answering?
+                </div>
+                <div class="bubble you">
+                    howdoyoudoaspace
+                </div>
+            </div>
+            <div class="chat" data-chat="person7">
+                <div class="conversation-start">
+                    <span>Today, 6:48 AM</span>
+                </div>
+                <div class="bubble you">
+                    Hello,
+                </div>
+                <div class="bubble you">
+                    it's me.
+                </div>
+                <div class="bubble you">
+                    I was wondering...
+                </div>
+            </div>
+            <div class="chat" data-chat="person8">
+                <div class="conversation-start">
+                    <span>Today, 5:38 PM</span>
+                </div>
+                <div class="bubble you">
+                    Hello, can you hear me?
+                </div>
+                <div class="bubble you">
+                    I'm in California dreaming
+                </div>
+                <div class="bubble me">
+                    ... about who we used to be.
+                </div>
+                <div class="bubble me">
+                    Are you serious?
+                </div>
+                <div class="bubble you">
+                    When we were younger and free...
+                </div>
+                <div class="bubble you">
+                    I've forgotten how it felt before
+                </div>
+            </div>
+            <div class="chat" data-chat="person9">
+                <div class="conversation-start">
+                    <span>Today, 3:38 AM</span>
+                </div>
+                <div class="bubble you">
+                    Hey human!
+                </div>
+                <div class="bubble you">
+                    Umm... Someone took a shit in the hallway.
+                </div>
+                <div class="bubble me">
+                    ... what.
+                </div>
+                <div class="bubble me">
+                    Are you serious?
+                </div>
+                <div class="bubble you">
+                    I mean...
+                </div>
+                <div class="bubble you">
+                    It’s not that bad...
+                </div>
+                <div class="bubble you">
+                    But we’re probably gonna need a new carpet.
+                </div>
+            </div>
+            <div class="chat" data-chat="person10">
+                <div class="conversation-start">
+                    <span>Yesterday, 4:20 PM</span>
+                </div>
+                <div class="bubble me">
+                    Hey human!
+                </div>
+                <div class="bubble me">
+                    Umm... Someone took a shit in the hallway.
+                </div>
+                <div class="bubble you">
+                    ... what.
+                </div>
+                <div class="bubble you">
+                    Are you serious?
+                </div>
+                <div class="bubble me">
+                    I mean...
+                </div>
+                <div class="bubble me">
+                    It’s not that bad...
+                </div>
+            </div>
+            <div class="input">
+                <button type="button" class="file-upload" onClick="openFileUpload()"><div class="icon-info"><i class='bx bx-paperclip'></i></div></button>
+                <input type="file" id="file-upload" style="display: none;">        
+                <input type="text" class="message-input" placeholder=" Type here...">     
+                <button type="button" class="send-button"><div class="icon-info"><i class='bx bx-send' ></i></div></button>
+            </div>
+        </div>
+        <div class="profile">
+            <div class="main-profile">
+                <button class="close-profile"><i class='bx bx-x-circle' ></i></button>
+                <img class="pfp" src="../Images/profile.jpg">
+                <span class="name">Person 1😂</span>
+                <span class="location">Ohio,  US</span>
+                <span class="profile-status">Lorem ipsum dolor sit  amet consectetur adipisicing elit. Tenetur, facere nostrum. Sunt odio 🔥🔥🔥ipsam iure quos! Eligendi ut reprehenderit ducimus eaque inventore pariatur perspiciatis? Laudantium autem corrupti eveniet quibusdam eaque!</span>
+            </div>
+            <div class="social-profile">
+                <a class="google" href=""><i class='bx bxl-google' style="color: #ff0000;"></i></a>
+                <a href="facebook"><i class='bx bxl-facebook' ></i></a>
+                <a href=""><i class='bx bxl-github' style="color: #000000;"></i></a>
+            </div>
+            <div class="contact-profile">
+                <span class="Phone">Phone: </span>
+                <span class="Email">E-mail: </span>
+            </div>
+        </div>
+    </div>
+    <script  src="script.js"></script>
+</body>
+</html>
