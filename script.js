@@ -32,8 +32,9 @@ let chat = {
 
 friends.all.forEach((f) => {
   f.addEventListener('mousedown', () => {
-    f.classList.contains('active') || setActiveChat(f);
-    document.querySelector('.profile').style.display = 'block';
+    if (!f.classList.contains('active')) {
+      setActiveChat(f);
+    }
   });
 });
 
@@ -69,6 +70,12 @@ document.getElementById("file-upload").addEventListener("change", function () {
     document.getElementById("file-label").innerText = fileName || "Choose a file";
 });
 
+document.querySelector('.info').addEventListener('click', function() {
+  document.querySelector('.profile').classList.add('profile-visible');
+  document.querySelector('.right').classList.add('right-expanded');
+});
+
 document.querySelector('.close-profile').addEventListener('click', function() {
-  document.querySelector('.profile').style.display = 'none';
+  document.querySelector('.profile').classList.remove('profile-visible');
+  document.querySelector('.right').classList.remove('right-expanded');
 });

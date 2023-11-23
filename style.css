@@ -39,8 +39,7 @@
 }
 
 .left-bar{
-    width: 5%;
-    height: 100%;
+    flex: 0 0 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -138,7 +137,7 @@ font-size: 17px;
 /********************end: left-bar*******************/
 /*********************start: left********************/
 .left{
-    float: left;
+    flex: 0 0 25%;
     background-color: rgb(115, 230, 148);
     width: 25%;
     height: 100%;
@@ -254,6 +253,8 @@ font-size: 17px;
     display: grid;
     margin-right: 10px;
     width: 100%;
+    border: none;
+    outline: none;
 }
 
 .name {
@@ -302,8 +303,16 @@ font-size: 17px;
     display: flex;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
-    width: 50%;
+    width: 100%;
     height: 100%;
+    transition: width 0.3s ease-in-out;
+    z-index: 100;
+}
+
+.right-expanded{
+    width: 53%;
+    height: 100%;
+    transition: width 0.3s ease-in-out;
 }
 
 .right .top {
@@ -318,6 +327,18 @@ font-size: 17px;
     margin-left: 6.5%;
     margin-top: 1%;
     font-size: 120%;
+}
+
+.right .top .info{
+    position: relative;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    font-size: 200%;
+    color: gray;
+    left: 95%;
+    bottom: 20%;
+    background-color: transparent;
 }
 
 .container .right .top .pfp{
@@ -421,7 +442,7 @@ transition-timing-function: cubic-bezier(0.4, -0.04, 1, 1);
     padding: 3% 10%;
     border: none;
     width: 90%;
-    height: 30%;
+    height: 10%;
     border-radius: 20px;
     font-size: 15px;
     text-align: left;
@@ -529,14 +550,22 @@ right: 0;
 /**********************end: right*********************/
 /********************start: profile*******************/
 .profile{
-    position: relative;
-    display: flex;
-    flex-direction: column;
+    position: fixed;
+    left: 83%;
     background-color: hsl(60, 4%, 95%);
-    width: 20%;
+    width: 18%;
     height: 100%;
     border: 2px solid rgb(208, 208, 208);
-    transition: opacity 0.5s ease-in-out, display 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateX(100px); 
+    transition: opacity 0.1s ease-in-out, transform 0.3s ease;
+    overflow: hidden;
+}
+
+.profile-visible {
+    opacity: 1;
+    transition-delay: 0.02s;
+    transform: translateY(0); 
 }
 
 .main-profile{
