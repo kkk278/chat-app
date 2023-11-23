@@ -71,8 +71,8 @@ document.getElementById("file-upload").addEventListener("change", function () {
 });
 
 document.querySelector('.info').addEventListener('click', function() {
-  document.querySelector('.profile').classList.add('profile-visible');
   document.querySelector('.right').classList.add('right-expanded');
+  document.querySelector('.profile').classList.add('profile-visible');
 });
 
 document.querySelector('.close-profile').addEventListener('click', function() {
