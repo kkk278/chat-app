@@ -201,14 +201,15 @@ font-size: 17px;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
-    overflow-y: hidden;
+    height: 84.9vh;
+    overflow: hidden;
     background: rgb(176, 174, 174);
     list-style-type: none;
 }
 
 .people:hover {
     overflow: scroll;
+    overflow-x: hidden;
 }
 
 .person {
